@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.login.LoginScreen
+import com.example.myapplication.register.RegisterUser
 import com.example.myapplication.ui.theme.MyApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,11 +22,13 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyApplicationTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    LoginScreen(
+                    /*LoginScreen(
                         modifier = Modifier.padding(innerPadding), onLoginClick={
                             username , password ->
                         }
-                    )
+                    )*/
+
+                    RegisterUser(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
